@@ -1,4 +1,5 @@
 Building on Pi
+Recall that source directory is /opt/vc/src/ 
 ++++++++++++++
 
 To build the test apps on the pi, first build the libs:
