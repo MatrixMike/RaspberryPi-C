@@ -20,3 +20,4 @@ Building on a different PC
 If you want to build the samples on a different machine (cross-compile) then set:
 SDKSTAGE=<path/to/firmware-directory> and CC=<path/to/cross-compiler>
 before running make.
+> Thu 19 Oct 2023 11:23:31 
