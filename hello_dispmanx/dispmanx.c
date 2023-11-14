@@ -93,7 +93,7 @@ int main(void)
 
     bcm_host_init();
 
-    printf("Open display[%i]...\n", screen );
+    printf("Open display[%u]...\n", screen );
     vars->display = vc_dispmanx_display_open( screen );
 
     ret = vc_dispmanx_display_get_info( vars->display, &vars->info);

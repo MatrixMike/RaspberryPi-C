@@ -192,7 +192,7 @@ VCOS_STATUS_T gx_priv_render_text(GX_DISPLAY_T * disp,
 	}
 	// setup the background colour if needed
 	if (bg_colour != GRAPHICS_TRANSPARENT_COLOUR) {
-		int err;
+		// int err;
 		VGfloat rendered_w, rendered_h;
 		VGfloat vg_bg_colour[4];
 
@@ -211,6 +211,7 @@ VCOS_STATUS_T gx_priv_render_text(GX_DISPLAY_T * disp,
 
 			vgClear(x, bottom, (VGint) rendered_w,
 				(VGint) rendered_h);
+				int err;
 			err = vgGetError();
 			if (err) {
 				GX_LOG("Error %d clearing bg text %d %d %g %g",

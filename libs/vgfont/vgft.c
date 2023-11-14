@@ -139,11 +139,11 @@ static void convert_contour(const FT_Vector *points, const char *tags, short poi
       /* last point was off -- quad or cubic */
       if (last_tag & 0x2) {
          /* cubic */
-         assert(c==3); c=0;
+         assert(c==3); // c=0;  cppcheck
          segments[segments_count++] = VG_CUBIC_TO;
       } else {
          /* quad */
-         assert(c==2); c=0;
+         assert(c==2); // c=0;
          segments[segments_count++] = VG_QUAD_TO;
       }
 

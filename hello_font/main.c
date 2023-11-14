@@ -54,7 +54,7 @@ int32_t render_subtitle(GRAPHICS_RESOURCE_HANDLE img, const char *text,
 	uint32_t text_length = strlen(text) - skip;
 	uint32_t width = 0, height = 0;
 	const char *split = text;
-	int32_t s = 0;
+//	int32_t s = 0;   // cppcheck
 	int len = 0;		// length of pre-subtitle
 	uint32_t img_w, img_h;
 
